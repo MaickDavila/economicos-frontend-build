@@ -1,1 +1,0 @@
-import{i as e,j as o}from"./index.724eca81.js";const r=e("pago",{state:()=>({pagos:[]}),getters:{},actions:{async set_pagos(t){try{const s={search:t},{data:a}=await o.get("/economicos/pagos/",{params:s});this.pagos=a}catch{return null}},async save_pagos(t){try{return await o.post("/economicos/import_pagos/",t)}catch{return null}}}});export{r as U};
